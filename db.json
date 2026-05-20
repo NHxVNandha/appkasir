@@ -1,0 +1,719 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "nama": "Makanan"
+    },
+    {
+      "id": 2,
+      "nama": "Minuman"
+    },
+    {
+      "id": 3,
+      "nama": "Cemilan"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "kode": "MKN001",
+      "nama": "Nasi Goreng Telor",
+      "harga": 18000,
+      "is_ready": true,
+      "gambar": "nasi-goreng-telor.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      }
+    },
+    {
+      "id": 2,
+      "kode": "MKN002",
+      "nama": "Mie Ayam Bakso",
+      "harga": 15000,
+      "is_ready": true,
+      "gambar": "mie-ayam-bakso.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      }
+    },
+    {
+      "id": 3,
+      "kode": "MNM001",
+      "nama": "Es Teh",
+      "harga": 6000,
+      "is_ready": true,
+      "gambar": "es-teh.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Minuman"
+      }
+    },
+    {
+      "id": 4,
+      "kode": "MNM002",
+      "nama": "Coffe Late",
+      "harga": 12000,
+      "is_ready": true,
+      "gambar": "coffe-late.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Minuman"
+      }
+    },
+    {
+      "id": 5,
+      "kode": "CMN001",
+      "nama": "Kentang Goreng",
+      "harga": 14000,
+      "is_ready": true,
+      "gambar": "kentang-goreng.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Cemilan"
+      }
+    },
+    {
+      "id": 6,
+      "kode": "MKN003",
+      "nama": "Bakso",
+      "harga": 17000,
+      "is_ready": true,
+      "gambar": "bakso.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      }
+    },
+    {
+      "id": 7,
+      "kode": "MKN004",
+      "nama": "Mie Goreng",
+      "harga": 16000,
+      "is_ready": true,
+      "gambar": "mie-goreng.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      }
+    },
+    {
+      "id": 8,
+      "kode": "MKN005",
+      "nama": "Nasi Ayam Geprek",
+      "harga": 20000,
+      "is_ready": true,
+      "gambar": "nasi-ayam-geprek.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      }
+    },
+    {
+      "id": 9,
+      "kode": "MKN006",
+      "nama": "Nasi Rames",
+      "harga": 17000,
+      "is_ready": true,
+      "gambar": "nasi-rames.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      }
+    },
+    {
+      "id": 10,
+      "kode": "MKN007",
+      "nama": "Sate Ayam",
+      "harga": 22000,
+      "is_ready": true,
+      "gambar": "sate-ayam.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      }
+    },
+    {
+      "id": 11,
+      "kode": "MKN008",
+      "nama": "Lontong Opor Ayam",
+      "harga": 19000,
+      "is_ready": true,
+      "gambar": "lontong-opor-ayam.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      }
+    },
+    {
+      "id": 12,
+      "kode": "MNM003",
+      "nama": "Es Jeruk",
+      "harga": 7000,
+      "is_ready": true,
+      "gambar": "es-jeruk.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Minuman"
+      }
+    },
+    {
+      "id": 13,
+      "kode": "MNM004",
+      "nama": "Teh Hangat",
+      "harga": 5000,
+      "is_ready": true,
+      "gambar": "teh-hangat.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Minuman"
+      }
+    },
+    {
+      "id": 14,
+      "kode": "CMN002",
+      "nama": "Cheese Burger",
+      "harga": 21000,
+      "is_ready": true,
+      "gambar": "cheese-burger.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Cemilan"
+      }
+    },
+    {
+      "id": 15,
+      "kode": "CMN003",
+      "nama": "Pangsit",
+      "harga": 13000,
+      "is_ready": true,
+      "gambar": "pangsit.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Cemilan"
+      }
+    },
+    {
+      "id": 16,
+      "kode": "MKN009",
+      "nama": "Bakso Special",
+      "harga": 20000,
+      "is_ready": true,
+      "gambar": "bakso.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      }
+    },
+    {
+      "id": 17,
+      "kode": "MKN010",
+      "nama": "Mie Goreng Pedas",
+      "harga": 18000,
+      "is_ready": true,
+      "gambar": "mie-goreng.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      }
+    },
+    {
+      "id": 18,
+      "kode": "MNM005",
+      "nama": "Es Teh Manis",
+      "harga": 7000,
+      "is_ready": true,
+      "gambar": "es-teh.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Minuman"
+      }
+    },
+    {
+      "id": 19,
+      "kode": "MNM006",
+      "nama": "Jeruk Dingin",
+      "harga": 8000,
+      "is_ready": true,
+      "gambar": "es-jeruk.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Minuman"
+      }
+    },
+    {
+      "id": 20,
+      "kode": "CMN004",
+      "nama": "Burger Kentang",
+      "harga": 23000,
+      "is_ready": true,
+      "gambar": "cheese-burger.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Cemilan"
+      }
+    },
+    {
+      "id": 21,
+      "kode": "CMN005",
+      "nama": "Pangsit Goreng",
+      "harga": 15000,
+      "is_ready": true,
+      "gambar": "pangsit.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Cemilan"
+      }
+    }
+  ],
+  "keranjangs": [
+    {
+      "jumlah": 1,
+      "total_harga": 17000,
+      "product": {
+        "id": 6,
+        "kode": "MKN003",
+        "nama": "Bakso",
+        "harga": 17000,
+        "is_ready": true,
+        "gambar": "bakso.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Makanan"
+        }
+      },
+      "id": 1
+    },
+    {
+      "jumlah": 3,
+      "total_harga": 45000,
+      "product": {
+        "id": 2,
+        "kode": "MKN002",
+        "nama": "Mie Ayam Bakso",
+        "harga": 15000,
+        "is_ready": true,
+        "gambar": "mie-ayam-bakso.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Makanan"
+        }
+      },
+      "id": 2
+    }
+  ],
+  "pesanans": [
+    {
+      "total_bayar": 32000,
+      "menus": [
+        {
+          "jumlah": 1,
+          "total_harga": 14000,
+          "product": {
+            "id": 5,
+            "kode": "CMN001",
+            "nama": "Kentang Goreng",
+            "harga": 14000,
+            "is_ready": true,
+            "gambar": "kentang-goreng.jpg",
+            "category": {
+              "id": 3,
+              "nama": "Cemilan"
+            }
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 18000,
+          "product": {
+            "id": 1,
+            "kode": "MKN001",
+            "nama": "Nasi Goreng Telor",
+            "harga": 18000,
+            "is_ready": true,
+            "gambar": "nasi-goreng-telor.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "id": 2
+        }
+      ],
+      "id": 1
+    },
+    {
+      "total_bayar": 15000,
+      "menus": [
+        {
+          "jumlah": 1,
+          "total_harga": 15000,
+          "product": {
+            "id": 2,
+            "kode": "MKN002",
+            "nama": "Mie Ayam Bakso",
+            "harga": 15000,
+            "is_ready": true,
+            "gambar": "mie-ayam-bakso.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "id": 1
+        }
+      ],
+      "id": 2
+    },
+    {
+      "total_bayar": 17000,
+      "menus": [
+        {
+          "jumlah": 1,
+          "total_harga": 17000,
+          "product": {
+            "id": 6,
+            "kode": "MKN003",
+            "nama": "Bakso",
+            "harga": 17000,
+            "is_ready": true,
+            "gambar": "bakso.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "id": 1
+        }
+      ],
+      "id": 3
+    },
+    {
+      "total_bayar": 0,
+      "menus": [],
+      "id": 4
+    },
+    {
+      "total_bayar": 0,
+      "menus": [],
+      "id": 5
+    },
+    {
+      "total_bayar": 71000,
+      "menus": [
+        {
+          "jumlah": 1,
+          "total_harga": 13000,
+          "product": {
+            "id": 15,
+            "kode": "CMN003",
+            "nama": "Pangsit",
+            "harga": 13000,
+            "is_ready": true,
+            "gambar": "pangsit.jpg",
+            "category": {
+              "id": 3,
+              "nama": "Cemilan"
+            }
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 21000,
+          "product": {
+            "id": 14,
+            "kode": "CMN002",
+            "nama": "Cheese Burger",
+            "harga": 21000,
+            "is_ready": true,
+            "gambar": "cheese-burger.jpg",
+            "category": {
+              "id": 3,
+              "nama": "Cemilan"
+            }
+          },
+          "id": 2
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 14000,
+          "product": {
+            "id": 5,
+            "kode": "CMN001",
+            "nama": "Kentang Goreng",
+            "harga": 14000,
+            "is_ready": true,
+            "gambar": "kentang-goreng.jpg",
+            "category": {
+              "id": 3,
+              "nama": "Cemilan"
+            }
+          },
+          "id": 3
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 23000,
+          "product": {
+            "id": 20,
+            "kode": "CMN004",
+            "nama": "Burger Kentang",
+            "harga": 23000,
+            "is_ready": true,
+            "gambar": "cheese-burger.jpg",
+            "category": {
+              "id": 3,
+              "nama": "Cemilan"
+            }
+          },
+          "id": 4
+        }
+      ],
+      "id": 6
+    },
+    {
+      "total_bayar": 108000,
+      "menus": [
+        {
+          "jumlah": 2,
+          "total_harga": 34000,
+          "product": {
+            "id": 6,
+            "kode": "MKN003",
+            "nama": "Bakso",
+            "harga": 17000,
+            "is_ready": true,
+            "gambar": "bakso.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 2,
+          "total_harga": 34000,
+          "product": {
+            "id": 9,
+            "kode": "MKN006",
+            "nama": "Nasi Rames",
+            "harga": 17000,
+            "is_ready": true,
+            "gambar": "nasi-rames.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "id": 2
+        },
+        {
+          "jumlah": 2,
+          "total_harga": 40000,
+          "product": {
+            "id": 8,
+            "kode": "MKN005",
+            "nama": "Nasi Ayam Geprek",
+            "harga": 20000,
+            "is_ready": true,
+            "gambar": "nasi-ayam-geprek.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "id": 3
+        }
+      ],
+      "id": 7
+    },
+    {
+      "total_bayar": 17000,
+      "menus": [
+        {
+          "jumlah": 1,
+          "total_harga": 17000,
+          "product": {
+            "id": 6,
+            "kode": "MKN003",
+            "nama": "Bakso",
+            "harga": 17000,
+            "is_ready": true,
+            "gambar": "bakso.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "id": 1
+        }
+      ],
+      "id": 8
+    },
+    {
+      "total_bayar": 60000,
+      "menus": [
+        {
+          "jumlah": 3,
+          "total_harga": 60000,
+          "product": {
+            "id": 16,
+            "kode": "MKN009",
+            "nama": "Bakso Special",
+            "harga": 20000,
+            "is_ready": true,
+            "gambar": "bakso.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "id": 3
+        }
+      ],
+      "id": 9
+    },
+    {
+      "total_bayar": 21000,
+      "menus": [
+        {
+          "jumlah": 1,
+          "total_harga": 6000,
+          "product": {
+            "id": 3,
+            "kode": "MNM001",
+            "nama": "Es Teh",
+            "harga": 6000,
+            "is_ready": true,
+            "gambar": "es-teh.jpg",
+            "category": {
+              "id": 2,
+              "nama": "Minuman"
+            }
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 15000,
+          "product": {
+            "id": 21,
+            "kode": "CMN005",
+            "nama": "Pangsit Goreng",
+            "harga": 15000,
+            "is_ready": true,
+            "gambar": "pangsit.jpg",
+            "category": {
+              "id": 3,
+              "nama": "Cemilan"
+            }
+          },
+          "id": 2
+        }
+      ],
+      "id": 10
+    },
+    {
+      "total_bayar": 86000,
+      "menus": [
+        {
+          "jumlah": 3,
+          "total_harga": 54000,
+          "product": {
+            "id": 1,
+            "kode": "MKN001",
+            "nama": "Nasi Goreng Telor",
+            "harga": 18000,
+            "is_ready": true,
+            "gambar": "nasi-goreng-telor.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "keterangan": "Pedas",
+          "id": 1
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 17000,
+          "product": {
+            "id": 6,
+            "kode": "MKN003",
+            "nama": "Bakso",
+            "harga": 17000,
+            "is_ready": true,
+            "gambar": "bakso.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "id": 2
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 15000,
+          "product": {
+            "id": 2,
+            "kode": "MKN002",
+            "nama": "Mie Ayam Bakso",
+            "harga": 15000,
+            "is_ready": true,
+            "gambar": "mie-ayam-bakso.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "id": 3
+        }
+      ],
+      "id": 11
+    },
+    {
+      "total_bayar": 34000,
+      "menus": [
+        {
+          "jumlah": 1,
+          "total_harga": 22000,
+          "product": {
+            "id": 10,
+            "kode": "MKN007",
+            "nama": "Sate Ayam",
+            "harga": 22000,
+            "is_ready": true,
+            "gambar": "sate-ayam.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 12000,
+          "product": {
+            "id": 4,
+            "kode": "MNM002",
+            "nama": "Coffe Late",
+            "harga": 12000,
+            "is_ready": true,
+            "gambar": "coffe-late.jpg",
+            "category": {
+              "id": 2,
+              "nama": "Minuman"
+            }
+          },
+          "id": 2
+        }
+      ],
+      "id": 12
+    }
+  ]
+}

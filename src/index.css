@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: radial-gradient(circle at top right, #fff4d4 0%, #f7fbff 45%, #eef3f8 100%);
+  color: #102a43;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page-shell {
+  padding-bottom: 220px;
+}
+
+.glass-nav {
+  background: linear-gradient(125deg, #0f4c81, #1f6fa6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 28px rgba(15, 76, 129, 0.3);
+}
+
+.brand-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #ffd166;
+  box-shadow: 0 0 0 5px rgba(255, 209, 102, 0.2);
+}
+
+.section-title {
+  letter-spacing: 0.2px;
+}
+
+.section-divider {
+  border-top: 2px solid rgba(16, 42, 67, 0.12);
+}
+
+.category-aktif {
+  background: linear-gradient(140deg, #0f4c81, #2c7db5);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 10px 20px rgba(15, 76, 129, 0.2);
+}
+
+.category-group .list-group-item {
+  border-radius: 14px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(16, 42, 67, 0.08);
+}
+
+.category-item {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.category-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(16, 42, 67, 0.12);
+}
+
+.btn-primary {
+  background: linear-gradient(140deg, #f08a24, #f46c3c);
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background: linear-gradient(140deg, #e37d13, #e25e2c) !important;
+}
+
+.menu-card {
+  height: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(16, 42, 67, 0.08);
+  border-radius: 16px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 26px rgba(16, 42, 67, 0.16) !important;
+}
+
+.menu-card-entrance {
+  animation: cardIn 0.45s ease both;
+}
+
+.menu-card-wrap:nth-child(1) .menu-card-entrance,
+.menu-card-wrap:nth-child(2) .menu-card-entrance,
+.menu-card-wrap:nth-child(3) .menu-card-entrance {
+  animation-delay: 0.04s;
+}
+
+.menu-card-wrap:nth-child(4) .menu-card-entrance,
+.menu-card-wrap:nth-child(5) .menu-card-entrance,
+.menu-card-wrap:nth-child(6) .menu-card-entrance {
+  animation-delay: 0.1s;
+}
+
+.menu-card-wrap:nth-child(n + 7) .menu-card-entrance {
+  animation-delay: 0.16s;
+}
+
+.menu-skeleton-card,
+.category-skeleton {
+  position: relative;
+  overflow: hidden;
+  background: #e8eff5;
+}
+
+.menu-skeleton-card {
+  height: 300px;
+  border-radius: 16px;
+}
+
+.category-skeleton {
+  height: 24px;
+  border-radius: 8px;
+}
+
+.menu-skeleton-card::after,
+.category-skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  animation: shimmer 1.1s infinite;
+}
+
+.menu-card-img {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.menu-card-body {
+  min-height: 110px;
+}
+
+.menu-card-title {
+  min-height: 44px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #102a43;
+}
+
+.menu-card-code {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #627d98;
+}
+
+.menu-card-price {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #0f4c81;
+}
+
+.cart-panel {
+  border: 1px solid rgba(16, 42, 67, 0.08);
+  border-radius: 16px;
+}
+
+.total-bayar-card {
+  border: 1px solid rgba(16, 42, 67, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(16, 42, 67, 0.12);
+  background: #ffffff;
+}
+
+.floating-total-wrap {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: min(300px, calc(100vw - 36px));
+  z-index: 1040;
+}
+
+.total-bayar-card .card-body {
+  padding: 0.85rem;
+}
+
+.total-bayar-card h5 {
+  font-size: 1rem;
+}
+
+.modal-menu-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+  width: 100%;
+}
+
+.modal-menu-price {
+  white-space: nowrap;
+  color: #0f4c81;
+}
+
+@media (max-width: 767.98px) {
+  .page-shell {
+    padding-bottom: 210px;
+  }
+
+  .floating-total-wrap {
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-height: 1000px) {
+  .hasil {
+    height: 650px;
+  }
+  
+  .menu {
+    height: 800px;
+  }
+}
+
+.overflow-auto::-webkit-scrollbar{
+  display: none;
+}
+
+.overflow-auto {
+  scrollbar-width: none;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
