@@ -7,6 +7,13 @@ import { numberWithCommas } from "../utils/utils";
 import { API_URL } from '../utils/constants'
 
 export default class TotalBayar extends Component {
+  simpanRiwayatLokal = (pesanan) => {
+    const riwayatLokal = JSON.parse(localStorage.getItem("pesanans_lokal") || "[]");
+    const idBaru = Date.now();
+    const dataBaru = [{ ...pesanan, id: idBaru }, ...riwayatLokal];
+    localStorage.setItem("pesanans_lokal", JSON.stringify(dataBaru));
+  };
+
   submitTotalBayar = (totalBayar) => {
       if (this.props.keranjangs.length === 0) return;
 
@@ -23,6 +30,12 @@ export default class TotalBayar extends Component {
         Promise.all(deleteRequests).finally(() => {
           this.props.history.push('/sukses', { fromBayar: true });
         });
+      }).catch(() => {
+        this.simpanRiwayatLokal(pesanan);
+        if (this.props.clearKeranjangsLokal) {
+          this.props.clearKeranjangsLokal();
+        }
+        this.props.history.push('/sukses', { fromBayar: true, offline: true });
       });
   };
 

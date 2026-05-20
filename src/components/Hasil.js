@@ -87,6 +87,16 @@ export default class Hasil extends Component {
         });
       })
       .catch((error) => {
+        if (this.props.updateKeranjangLokal) {
+          this.props.updateKeranjangLokal(this.state.keranjangDetail.id, data);
+        }
+        swal({
+          title: "Mode Offline",
+          text: "Perubahan disimpan di sesi lokal.",
+          icon: "success",
+          button: false,
+          timer: 1200,
+        });
         console.log("Error yaa ", error);
       });
   };
@@ -110,6 +120,16 @@ export default class Hasil extends Component {
         });
       })
       .catch((error) => {
+        if (this.props.hapusKeranjangLokal) {
+          this.props.hapusKeranjangLokal(id);
+        }
+        swal({
+          title: "Mode Offline",
+          text: "Pesanan dihapus dari sesi lokal.",
+          icon: "success",
+          button: false,
+          timer: 1200,
+        });
         console.log("Error yaa ", error);
       });
   };

@@ -48,8 +48,64 @@ export default class Home extends Component {
         this.setState({ keranjangs });
       })
       .catch((error) => {
+        this.setState({ keranjangs: this.state.keranjangs || [] });
         console.log("Error yaa ", error);
       });
+  };
+
+  tambahKeranjangLokal = (value) => {
+    const keranjangsLokal = [...this.state.keranjangs];
+    const keranjangSama = keranjangsLokal.find(
+      (item) => item.product && item.product.id === value.id
+    );
+
+    if (keranjangSama) {
+      const keranjangsBaru = keranjangsLokal.map((item) => {
+        if (item.product.id !== value.id) return item;
+
+        const jumlahBaru = item.jumlah + 1;
+        return {
+          ...item,
+          jumlah: jumlahBaru,
+          total_harga: jumlahBaru * item.product.harga,
+        };
+      });
+
+      this.setState({ keranjangs: keranjangsBaru });
+      return;
+    }
+
+    const itemBaru = {
+      id: Date.now(),
+      jumlah: 1,
+      total_harga: value.harga,
+      product: value,
+    };
+
+    this.setState({ keranjangs: [...keranjangsLokal, itemBaru] });
+  };
+
+  updateKeranjangLokal = (keranjangId, dataBaru) => {
+    const keranjangsBaru = this.state.keranjangs.map((item) => {
+      if (item.id !== keranjangId) return item;
+      return {
+        ...item,
+        ...dataBaru,
+      };
+    });
+
+    this.setState({ keranjangs: keranjangsBaru });
+  };
+
+  hapusKeranjangLokal = (keranjangId) => {
+    const keranjangsBaru = this.state.keranjangs.filter(
+      (item) => item.id !== keranjangId
+    );
+    this.setState({ keranjangs: keranjangsBaru });
+  };
+
+  clearKeranjangsLokal = () => {
+    this.setState({ keranjangs: [] });
   };
 
   changeCategory = (value) => {
@@ -112,6 +168,14 @@ export default class Home extends Component {
         }
       })
       .catch((error) => {
+        this.tambahKeranjangLokal(value);
+        swal({
+          title: "Mode Offline",
+          text: "Menu ditambahkan ke hasil lokal (tanpa server).",
+          icon: "success",
+          button: false,
+          timer: 1200,
+        });
         console.log("Error yaa ", error);
       });
   };
@@ -151,6 +215,9 @@ export default class Home extends Component {
               <Hasil
                 keranjangs={keranjangs}
                 refreshKeranjangs={this.getKeranjangs}
+                updateKeranjangLokal={this.updateKeranjangLokal}
+                hapusKeranjangLokal={this.hapusKeranjangLokal}
+                clearKeranjangsLokal={this.clearKeranjangsLokal}
                 {...this.props}
               />
             </Row>

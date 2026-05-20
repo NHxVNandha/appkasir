@@ -16,6 +16,8 @@ export default class Sukses extends Component {
   }
 
   componentDidMount() {
+    const riwayatLokal = JSON.parse(localStorage.getItem("pesanans_lokal") || "[]");
+
     axios
       .get(API_URL + "pesanans")
       .then((res) => {
@@ -23,7 +25,7 @@ export default class Sukses extends Component {
         this.setState({ pesanans, loading: false });
       })
       .catch((error) => {
-        this.setState({ loading: false });
+        this.setState({ pesanans: riwayatLokal, loading: false });
         console.log("Error yaa ", error);
       });
   }
